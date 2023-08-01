@@ -10,10 +10,10 @@ pipeline{
         }
         stage("building"){
             steps{
-                    dir('node')
-                    {
+
+                    
                     sh 'docker build -t krnmalde/my-app:2.5 .'
-                    }
+                    
             }
 
         }
