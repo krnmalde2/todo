@@ -10,7 +10,7 @@ pipeline{
         }
         stage("building"){
             steps{
-                    docker build -t krnmalde/my-app:2.1
+                    docker build -t krnmalde/my-app:2.1 .
             }
 
         }
