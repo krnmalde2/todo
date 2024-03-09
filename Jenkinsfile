@@ -1,13 +1,6 @@
 pipeline{
     agent any
     stages{
-#        stage("checkout"){
-#            steps{
-#
-#                git 'https://github.com/krnmalde2/todo.git'
-#                
-#            }
-#        }
         stage("building"){
             steps{
 
