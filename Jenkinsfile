@@ -4,7 +4,7 @@ pipeline{
         stage("checkout"){
             steps{
 
-                git 'https://github.com/krnmalde2/node.git'
+                git 'https://github.com/krnmalde2/todo.git'
                 
             }
         }
@@ -12,14 +12,14 @@ pipeline{
             steps{
 
                     
-                    sh 'docker build -t krnmalde/my-app:2.5 .'
+                    sh 'docker build -t krnmalde/todoapp:1.1 .'
                     
             }
 
         }
         stage("pushing"){
             steps{
-               sh 'docker push krnmalde/my-app:2.5'
+               sh 'docker push krnmalde/todoapp:1.1'
             }
         }
     }
